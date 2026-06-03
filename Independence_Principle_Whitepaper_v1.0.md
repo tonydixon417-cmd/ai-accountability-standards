@@ -5,7 +5,7 @@
 
 **Author:** Anthony Cyle Dixon
 **Published by:** Contrail Equity Strategies LLC / AI Institute of Accountability Standards
-**Version:** 1.0 — June 2026
+**Version:** 1.0 — June 2026 (concept first articulated May 9, 2026)
 
 ---
 
@@ -143,7 +143,7 @@ The black box is not inside the cockpit for a reason.
 
 ## Prior Art Notice
 
-This document establishes public prior art for the Independence Principle as applied to AI audit architecture. The concept, terminology, and three-requirement framework defined herein are original work of Anthony Cyle Dixon, published June 2026 under Contrail Equity Strategies LLC.
+This document establishes public prior art for the Independence Principle as applied to AI audit architecture. The concept, terminology, and three-requirement framework defined herein are original work of Anthony Cyle Dixon. The core principle — that an AI system cannot serve as an independent auditor of its own behavior — was first articulated on May 9, 2026, in the context of developing the AI Black Box Standard. This document formalizes that concept as a standalone standard, published June 2026 under Contrail Equity Strategies LLC.
 
 © 2026 Anthony Cyle Dixon / Contrail Equity Strategies LLC. All rights reserved.
 
