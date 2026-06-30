@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20883475.svg)](https://doi.org/10.5281/zenodo.20883475)
+
 # AI Accountability Standards — Aviation-Grade Framework for Large Language Models
 
 **Author:** Anthony C. Dixon  
@@ -284,4 +286,3 @@ Free to cite, reference, and build upon with attribution.
 ---
 
 *The document stands at the podium.*
-
