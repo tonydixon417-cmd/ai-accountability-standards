@@ -2,7 +2,7 @@
 
 Author: Anthony Cyle Dixon / Contrail Equity Strategies LLC  
 Repository: https://github.com/tonydixon417-cmd/ai-accountability-standards  
-DOI: https://doi.org/10.5281/zenodo.20883475  
+DOI: https://doi.org/10.5281/zenodo.21322039  
 License: CC BY 4.0  
 Status: Defensive publication / prior art / open standards framework
 
@@ -58,4 +58,4 @@ The Becoming is the human-factors and narrative companion to this technical stan
 
 ## Citation
 
-Dixon, Anthony Cyle. AI Accountability Standards — Aviation-Grade Framework for Large Language Models. Contrail Equity Strategies LLC, 2026. DOI: https://doi.org/10.5281/zenodo.20883475
+Dixon, Anthony Cyle. AI Accountability Standards — Aviation-Grade Framework for Large Language Models. Contrail Equity Strategies LLC, 2026. DOI: https://doi.org/10.5281/zenodo.21322039
