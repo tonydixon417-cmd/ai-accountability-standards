@@ -3,7 +3,7 @@
 **Author:** Anthony Cyle Dixon  
 **Organization:** Contrail Equity Strategies LLC  
 **Repository:** https://github.com/Tonydixon417-cmd/ai-accountability-standards  
-**DOI:** [10.5281/zenodo.20883475](https://doi.org/10.5281/zenodo.20883475)  
+**DOI:** [10.5281/zenodo.21322039](https://doi.org/10.5281/zenodo.21322039)  
 **Status:** Defensive publication / prior art / open standards framework  
 
 > **AI does not need another chatbot wrapper. It needs a black box, warning lights, a persistent identity layer, and a human accountability structure.**
@@ -175,7 +175,7 @@ AI accountability, AI governance, AI audit trail, AI Black Box, AI drift detecti
 
 If you use or cite this framework, cite the repository and DOI:
 
-**Dixon, Anthony Cyle. _AI Accountability Standards — Aviation-Grade Framework for Large Language Models._ Contrail Equity Strategies LLC, 2026. DOI: [10.5281/zenodo.20883475](https://doi.org/10.5281/zenodo.20883475).**
+**Dixon, Anthony Cyle. _AI Accountability Standards — Aviation-Grade Framework for Large Language Models._ Contrail Equity Strategies LLC, 2026. DOI: [10.5281/zenodo.21322039](https://doi.org/10.5281/zenodo.21322039).**
 
 ---
 
