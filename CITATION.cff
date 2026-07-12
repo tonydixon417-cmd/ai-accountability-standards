@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "AI Accountability Standards: An Aviation-Grade Governance Stack for AI Audit Trails, Drift Detection, Human Oversight, and Data Sovereignty"
+version: "2.1.0"
+date-released: 2026-07-12
+doi: 10.5281/zenodo.20883475
+url: "https://github.com/tonydixon417-cmd/ai-accountability-standards"
+repository-code: "https://github.com/tonydixon417-cmd/ai-accountability-standards"
+license: CC-BY-4.0
+authors:
+  - family-names: Dixon
+    given-names: Anthony Cyle
+    alias: Tony Dixon
+abstract: >
+  An integrated aviation-grade accountability architecture for AI systems and
+  agentic workflows. The stack includes the AI Black Box Standard (AIBB), Loop
+  Detector, ZeroTX Architecture, Persistent Identity Layer (PIL), Missing CVR,
+  Ethics Floor, AI Preflight Briefing Standard, AI Type Rating Framework, Chief
+  AI Accountability Officer role, Distributed Oversight Model, Early Warning
+  Channel, ZeroTX Deployment Tiers, and Check-Ride Protocol. Together these
+  standards define a modular system for AI audit trails, drift detection,
+  human-AI oversight, data sovereignty, operator accountability, enterprise AI
+  governance, and regulatory readiness in consequential domains including
+  healthcare, law, finance, insurance, government, and enterprise decision
+  support.
+keywords:
+  - AI accountability
+  - AI governance
+  - AI audit trail
+  - AI Black Box
+  - AI drift detection
+  - AI risk management
+  - AI compliance
+  - EU AI Act
+  - responsible AI
+  - agentic AI
+  - AI safety
+  - human in the loop
+  - automation bias
+  - model risk management
+  - AI incident response
+  - ZeroTX
+  - Persistent Identity Layer
+  - Loop Detector
+  - Missing CVR
+  - Chief AI Accountability Officer
+  - healthcare AI
+  - legal AI
+  - financial AI
+  - enterprise AI governance
+  - aviation safety
+  - human factors
