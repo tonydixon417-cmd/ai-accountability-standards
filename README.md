@@ -13,6 +13,14 @@
 
 ---
 
+## Human-Factors Companion — *The Becoming*
+
+*The Becoming* is the human-factors companion to this architecture. It is not hosted here as a manuscript; the full book remains a separate copyrighted publishing asset.
+
+This repository contains the technical blueprints. The book explains why those blueprints are necessary — connecting AI accountability to aviation safety, crew resource management, black boxes, cockpit voice recorders, automation bias, mode confusion, and human responsibility.
+
+Read the companion bridge: [`THE_BECOMING_COMPANION.md`](./THE_BECOMING_COMPANION.md).
+
 ## What This Repository Is
 
 This repository contains an integrated system of open standards for AI accountability, AI audit trails, drift detection, human oversight, data sovereignty, and operator accountability.
