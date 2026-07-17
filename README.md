@@ -62,7 +62,7 @@ This repository translates aviation-grade human-machine accountability into the 
 | Flight Data Recorder | **AI Black Box Standard (AIBB)** | Logs AI outputs, confidence states, session boundaries, and drift events in an auditable record. |
 | Cockpit Voice Recorder | **Missing CVR** | Defines the missing reasoning/context record that current AI audit systems do not capture. |
 | Warning lights | **Loop Detector** | Detects human-AI accountability loops, automation bias, over-reliance, and mode confusion. |
-| Pilot profile / operating memory | **Persistent Identity Layer (PIL)** | Preserves user context, values, decisions, and identity across sessions and platforms. |
+| Pilot profile / operating memory | **Persistent Identity Layer (PIL)** | Preserves user context, values, decisions, and identity across sessions. Functions as a behavioral training layer without weight updates (see v2.0). |
 | Ground Proximity Warning System | **Covenant Warning System / Ethics Floor** | Alerts when the system approaches ethical or operational boundaries. |
 | ATIS / preflight briefing | **AI Preflight Briefing Standard** | Tells the user what system they are operating, what it can do, and where its limits are. |
 | Type rating | **AI Type Rating Framework** | Scales operator certification to the consequence level of the AI system. |
@@ -118,6 +118,7 @@ If you are new to the stack, start here:
 | Loop Detector | [Loop_Detector_Whitepaper_v1.3.md](./Loop_Detector_Whitepaper_v1.3.md) | v1.3 | Detects accountability loops and human over-reliance |
 | ZeroTX Architecture | [ZeroTX_Whitepaper_v2.0.md](./ZeroTX_Whitepaper_v2.0.md) | v2.0 | Data sovereignty / zero-transmission design |
 | Persistent Identity Layer | [PIL_Whitepaper_v1.2.md](./PIL_Whitepaper_v1.2.md) | v1.2 | Persistent user context and identity layer |
+| **PIL — Training Layer (NEW)** | [PIL_Training_Layer_Whitepaper_v2.0.md](./PIL_Training_Layer_Whitepaper_v2.0.md) | v2.0 | **NEW** — PIL as behavioral training layer without weight updates |
 | Missing CVR | [Missing_CVR_Whitepaper_v1.2.md](./Missing_CVR_Whitepaper_v1.2.md) | v1.2 | Missing reasoning/context record |
 | Covenant Warning System | [Covenant_Warning_System_v1.0.md](./Covenant_Warning_System_v1.0.md) | v1.0 | Ethical terrain warning system |
 | AI Preflight Briefing Standard | [AI_Preflight_Briefing_Standard_v1.0.md](./AI_Preflight_Briefing_Standard_v1.0.md) | v1.0 | Session-start capability disclosure |
