@@ -3,6 +3,7 @@
 Author: Anthony Cyle Dixon / Contrail Equity Strategies LLC  
 Repository: https://github.com/tonydixon417-cmd/ai-accountability-standards  
 DOI: https://doi.org/10.5281/zenodo.21322039  
+PIL Paradigm Paper DOI: https://doi.org/10.5281/zenodo.21465514  
 License: CC BY 4.0  
 Status: Defensive publication / prior art / open standards framework
 
@@ -25,28 +26,39 @@ The problem is not that AI dreams. The problem is that it does not know when it 
 - AI Black Box Standard (AIBB): AI flight recorder; logs outputs, confidence states, session boundaries, and drift events.
 - Missing CVR: identifies the missing reasoning/context record in current AI audit systems.
 - Loop Detector: detects human-AI accountability loops, automation bias, over-reliance, and mode confusion.
-- Persistent Identity Layer (PIL): preserves user context, values, decisions, and identity across sessions and platforms.
-- ZeroTX Architecture: data-sovereignty architecture for local, federated, or enterprise-controlled AI processing.
+- Persistent Identity Layer (PIL): preserves user context, values, decisions, and identity across sessions and platforms. The PIL is formally defined as a behavioral training layer — "training without weight updates" — in the standalone paradigm paper (DOI: 10.5281/zenodo.21465514).
+- ZeroTX Architecture: data-sovereignty architecture and action gateway for local, federated, or enterprise-controlled AI processing.
 - Ethics Floor / Covenant Warning System: establishes ethical and operational terrain boundaries.
 - AI Preflight Briefing Standard: requires session-start disclosure of capability, confidence, boundaries, and role.
 - AI Type Rating Framework: scales operator certification to the consequence level of the AI system.
 - Chief AI Accountability Officer (CAAO): defines a named accountable human role for enterprise AI deployment.
 - Distributed Oversight Model: prevents the accountability officer or deploying organization from becoming a single point of failure.
-- Early Warning Channel: lets human operators log “something feels wrong” before a formal failure threshold is crossed.
+- Early Warning Channel: lets human operators log "something feels wrong" before a formal failure threshold is crossed.
 - ZeroTX Deployment Tiers: defines Pure, Federated, and Enterprise deployment models.
 - Check-Ride Protocol: recurrent evaluation system that detects whether human reviewers remain actively engaged or are rubber-stamping AI output.
 
 ## Recommended Reading Path
 
-1. AI Black Box Standard (AIBB)
-2. Loop Detector
-3. Persistent Identity Layer (PIL)
-4. ZeroTX Architecture
-5. Missing CVR
-6. Distributed Oversight Model
-7. Early Warning Channel
-8. ZeroTX Deployment Tiers
-9. Check-Ride Protocol
+1. PIL Paradigm Paper (standalone paradigm document)
+2. AI Black Box Standard (AIBB)
+3. Loop Detector
+4. Persistent Identity Layer (PIL)
+5. ZeroTX Architecture
+6. Missing CVR
+7. Distributed Oversight Model
+8. Early Warning Channel
+9. ZeroTX Deployment Tiers
+10. Check-Ride Protocol
+
+## Paradigm Paper
+
+The PIL Training Layer: Behavioral Conditioning of AI Systems Without Weight Modification
+Author: Anthony Cyle Dixon
+Published: July 17, 2026
+DOI: https://doi.org/10.5281/zenodo.21465514
+License: CC-BY 4.0
+
+This standalone paradigm paper formally defines the PIL as a behavioral training mechanism that shapes AI system behavior without modifying underlying model weights. It positions the PIL against system prompts, fine-tuning, RLHF, RAG, continual learning, and memory-augmented models, and maps the architecture against Suleyman's four shutdown criteria for autonomous AI systems.
 
 ## Domains
 
@@ -54,8 +66,10 @@ Relevant to healthcare AI, legal AI, financial AI, insurance AI, government AI, 
 
 ## Companion Book
 
-The Becoming is the human-factors and narrative companion to this technical standards stack. The book explains why the accountability architecture is necessary; this repository documents the architecture itself.
+The Becoming: AI, Accountability, and the Human Future is the human-factors and narrative companion to this technical standards stack. The book explains why the accountability architecture is necessary; this repository documents the architecture itself. Published on Amazon KDP, July 2026.
 
 ## Citation
 
-Dixon, Anthony Cyle. AI Accountability Standards — Aviation-Grade Framework for Large Language Models. Contrail Equity Strategies LLC, 2026. DOI: https://doi.org/10.5281/zenodo.21322039
+Dixon, A. C. (2026). AI Accountability Standards — Aviation-Grade Framework for Large Language Models. Contrail Equity Strategies LLC. DOI: https://doi.org/10.5281/zenodo.21322039
+
+Dixon, A. C. (2026). The PIL Training Layer: Behavioral Conditioning of AI Systems Without Weight Modification. Zenodo. DOI: https://doi.org/10.5281/zenodo.21465514

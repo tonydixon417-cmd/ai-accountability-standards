@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 title: "AI Accountability Standards: An Aviation-Grade Governance Stack for AI Audit Trails, Drift Detection, Human Oversight, and Data Sovereignty"
-version: "2.1.0"
-date-released: 2026-07-12
+version: "2.3.0"
+date-released: "2026-07-20"
 doi: 10.5281/zenodo.21322039
 url: "https://github.com/tonydixon417-cmd/ai-accountability-standards"
 repository-code: "https://github.com/tonydixon417-cmd/ai-accountability-standards"
@@ -41,6 +41,10 @@ keywords:
   - AI incident response
   - ZeroTX
   - Persistent Identity Layer
+  - PIL Training Layer
+  - behavioral training
+  - inference-time conditioning
+  - training without weight updates
   - Loop Detector
   - Missing CVR
   - Chief AI Accountability Officer
@@ -50,3 +54,12 @@ keywords:
   - enterprise AI governance
   - aviation safety
   - human factors
+preferred-citation:
+  type: article
+  title: "The PIL Training Layer: Behavioral Conditioning of AI Systems Without Weight Modification"
+  authors:
+    - family-names: Dixon
+      given-names: Anthony Cyle
+  date-released: "2026-07-17"
+  doi: 10.5281/zenodo.21465514
+  url: "https://doi.org/10.5281/zenodo.21465514"
