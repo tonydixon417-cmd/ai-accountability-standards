@@ -20,7 +20,9 @@
 
 This repository contains the technical blueprints. The book explains why those blueprints are necessary — connecting AI accountability to aviation safety, crew resource management, black boxes, cockpit voice recorders, automation bias, mode confusion, and human responsibility.
 
-Read the companion bridge: [`THE_BECOMING_COMPANION.md`](./THE_BECOMING_COMPANION.md).
+**Practitioner's Workbook (Companion Guide):** [`The_Becoming_Companion_Guide_v1.2.md`](./The_Becoming_Companion_Guide_v1.2.md) — A practitioner's workbook with self-diagnostic tests, concrete weekly actions, and checkpoints for each part of the book. This is the companion guide referenced inside *The Becoming*.
+
+**Book-to-Architecture Bridge:** [`THE_BECOMING_COMPANION.md`](./THE_BECOMING_COMPANION.md) — Maps every part of the book to the technical components in this repository.
 
 ## What This Repository Is
 
