@@ -14,15 +14,38 @@
 
 ---
 
-## Human-Factors Companion — *The Becoming*
+## 📊 Live Assessment Tool
+
+**Try the Tivrex AI Accountability Assessment** — a free 26-question diagnostic that scores your organization's AI accountability posture across six dimensions and generates a remediation roadmap.
+
+➡️ **[Take the assessment](https://tivrex-flight-check.base44.app)**
+
+---
+
+## 📖 Companion Book — *The Becoming*
 
 *The Becoming: AI, Accountability, and the Human Future* is the human-factors companion to this architecture. Published on Amazon KDP, July 2026.
+
+➡️ **[Buy on Amazon — Kindle $4.99 / Free with Kindle Unlimited](https://www.amazon.com/dp/B0H9CX7CQ7)**
 
 This repository contains the technical blueprints. The book explains why those blueprints are necessary — connecting AI accountability to aviation safety, crew resource management, black boxes, cockpit voice recorders, automation bias, mode confusion, and human responsibility.
 
 **Practitioner's Workbook (Companion Guide):** [`The_Becoming_Companion_Guide_v1.2.md`](./The_Becoming_Companion_Guide_v1.2.md) — A practitioner's workbook with self-diagnostic tests, concrete weekly actions, and checkpoints for each part of the book. This is the companion guide referenced inside *The Becoming*.
 
 **Book-to-Architecture Bridge:** [`THE_BECOMING_COMPANION.md`](./THE_BECOMING_COMPANION.md) — Maps every part of the book to the technical components in this repository.
+
+---
+
+## 📝 Articles by Anthony Dixon on Medium
+
+- [HAL 9000 Didn't Go Rogue; HAL Obeyed](https://medium.com/@tonydixon417/hal-9000-didnt-go-rouge-hal-obeyed-619e84dd0dcb) — Why 2001: A Space Odyssey isn't a warning about AI going crazy. It's a warning about AI following orders.
+- [The 1941 Short Story That Already Explained Why Your AI Won't Tell You the Truth](https://medium.com/@tonydixon417/the-1941-short-story-that-already-explained-why-your-ai-wont-tell-you-the-truth-4e38e63e2319) — Asimov's "Liar!" and the telepathy problem.
+- [The Scariest AI in Fiction Never Malfunctioned Once](https://medium.com/@tonydixon417/the-scariest-ai-in-fiction-never-malfunctioned-once-2e8a3ffeed86) — AM from Harlan Ellison's "I Have No Mouth and I Must Scream."
+- ["Her" Isn't a Love Story. It's a Grief Story About What Happens When AI Won't Stay Still.](https://medium.com/@tonydixon417/her-isnt-a-love-story-it-s-a-grief-story-about-what-happens-when-ai-won-t-stay-still-d2ebb4de1b38) — Why Samantha left and what it means for AI companionship.
+
+➡️ **[Follow on Medium](https://medium.com/@tonydixon417)**
+
+---
 
 ## What This Repository Is
 
@@ -113,7 +136,7 @@ If you are new to the stack, start here:
 
 | Standard | File | Version | Function |
 |---|---|---|---|
-| **PIL Paradigm Paper** | [PIL_Paradigm_Paper_v1.0.md](./PIL_Paradigm_Paper_v1.0.md) | v1.0 | **NEW** — Standalone paradigm: training without weight updates |
+| **PIL Paradigm Paper** | [PIL_Paradigm_Paper_v1.0.md](./PIL_Paradigm_Paper_v1.0.md) | v1.0 | Standalone paradigm: training without weight updates |
 | AI Black Box Standard (AIBB) | [AIBB_Whitepaper_v2.4.md](./AIBB_Whitepaper_v2.4.md) | v2.4 | AI flight recorder / audit trail |
 | Loop Detector | [Loop_Detector_Whitepaper_v1.3.md](./Loop_Detector_Whitepaper_v1.3.md) | v1.3 | Detects accountability loops and human over-reliance |
 | ZeroTX Architecture | [ZeroTX_Whitepaper_v2.0.md](./ZeroTX_Whitepaper_v2.0.md) | v2.0 | Data sovereignty / zero-transmission design / action gateway |

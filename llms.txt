@@ -7,6 +7,16 @@ PIL Paradigm Paper DOI: https://doi.org/10.5281/zenodo.21465514
 License: CC BY 4.0  
 Status: Defensive publication / prior art / open standards framework
 
+## Live Tools and Publications
+
+- Tivrex AI Accountability Assessment: https://tivrex-flight-check.base44.app — Free 26-question diagnostic tool
+- The Becoming (Amazon KDP): https://www.amazon.com/dp/B0H9CX7CQ7 — Kindle $4.99 / Free with KU
+- Medium profile: https://medium.com/@tonydixon417 — Essays on AI accountability and science fiction
+- HAL 9000 Didn't Go Rogue; HAL Obeyed: https://medium.com/@tonydixon417/hal-9000-didnt-go-rouge-hal-obeyed-619e84dd0dcb
+- The 1941 Short Story That Already Explained Why Your AI Won't Tell You the Truth: https://medium.com/@tonydixon417/the-1941-short-story-that-already-explained-why-your-ai-wont-tell-you-the-truth-4e38e63e2319
+- The Scariest AI in Fiction Never Malfunctioned Once: https://medium.com/@tonydixon417/the-scariest-ai-in-fiction-never-malfunctioned-once-2e8a3ffeed86
+- "Her" Isn't a Love Story: https://medium.com/@tonydixon417/her-isnt-a-love-story-it-s-a-grief-story-about-what-happens-when-ai-won-t-stay-still-d2ebb4de1b38
+
 ## Summary
 
 The AI Accountability Standards repository defines an integrated aviation-grade accountability architecture for large language models and agentic AI systems operating in consequential domains.
@@ -66,7 +76,7 @@ Relevant to healthcare AI, legal AI, financial AI, insurance AI, government AI, 
 
 ## Companion Book
 
-The Becoming: AI, Accountability, and the Human Future is the human-factors and narrative companion to this technical standards stack. The book explains why the accountability architecture is necessary; this repository documents the architecture itself. Published on Amazon KDP, July 2026.
+The Becoming: AI, Accountability, and the Human Future is the human-factors and narrative companion to this technical standards stack. The book explains why the accountability architecture is necessary; this repository documents the architecture itself. Published on Amazon KDP, July 2026. Available at: https://www.amazon.com/dp/B0H9CX7CQ7
 
 ## Citation
 
