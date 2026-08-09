@@ -1,7 +1,7 @@
 # Tivrex Public Prototype Release Note
 
 **Date:** August 8, 2026
-**Status:** Public release candidate — local, uncommitted package
+**Status:** Public release package v2.4.0 — committed locally; publication verification pending
 **Project:** Tivrex AI Accountability and Continuity Architecture
 **Author:** Anthony Cyle Dixon / Tony Dixon
 **Organization:** Contrail Equity Strategies LLC
@@ -93,7 +93,7 @@ A negative or limited result is useful. The purpose of this release candidate is
 
 When reusing the architecture or reference code, cite:
 
-> Dixon, Anthony Cyle. *AI Accountability Standards: An Aviation-Grade Governance Stack for AI Audit Trails, Drift Detection, Human Oversight, and Data Sovereignty*. Version 2.3.0. Zenodo, 2026. DOI: https://doi.org/10.5281/zenodo.21322039.
+> Dixon, Anthony Cyle. *AI Accountability Standards: An Aviation-Grade Governance Stack for AI Audit Trails, Drift Detection, Human Oversight, and Data Sovereignty*. Version 2.4.0. Zenodo, 2026. DOI: https://doi.org/10.5281/zenodo.21322039.
 
 For the PIL paradigm specifically, cite:
 
@@ -103,6 +103,6 @@ See `CITATION_AND_ATTRIBUTION.md` for reuse boundaries and component-level attri
 
 ## Release state
 
-This document records the prototype release candidate prepared on August 8, 2026. It does not imply that the package has been committed, tagged, published, independently reviewed, or accepted by an external organization.
+This document records the v2.4.0 public release package prepared on August 8–9, 2026. It does not imply independent review, external acceptance, or production readiness.
 
 Those events should be recorded separately when they occur and verified from the relevant repository, DOI, or review record.

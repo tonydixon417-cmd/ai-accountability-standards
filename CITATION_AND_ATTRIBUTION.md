@@ -13,7 +13,7 @@ Use **Anthony Cyle Dixon** for formal citation, authorship, and legal or archiva
 
 ## Recommended repository citation
 
-Dixon, Anthony Cyle. *AI Accountability Standards: An Aviation-Grade Governance Stack for AI Audit Trails, Drift Detection, Human Oversight, and Data Sovereignty*. Version 2.3.0. Zenodo, 2026. DOI: <https://doi.org/10.5281/zenodo.21322039>.
+Dixon, Anthony Cyle. *AI Accountability Standards: An Aviation-Grade Governance Stack for AI Audit Trails, Drift Detection, Human Oversight, and Data Sovereignty*. Version 2.4.0. Zenodo, 2026. DOI: <https://doi.org/10.5281/zenodo.21322039>.
 
 The repository's `CITATION.cff` file is the machine-readable citation source for this release.
 
@@ -86,7 +86,7 @@ Do not state that a component is patented, patent-pending, legally compliant, or
 
 The repository currently contains older metadata that should be reconciled during the README cleanup pass:
 
-- `CITATION.cff` identifies the release as version 2.3.0 and dates it July 20, 2026.
+- `CITATION.cff` identifies the release as version 2.4.0 and dates it August 9, 2026.
 - The README's paper table still lists AIBB as v2.4 even though `AIBB_Whitepaper_v2.5.md` is present in the repository.
 - The current local repository commit inspected for this document is `3166fbb7ab941afd2b1918268c7b569fa5bf9e82`, dated July 25, 2026.
 

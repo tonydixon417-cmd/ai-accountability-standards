@@ -1,7 +1,7 @@
 # Tivrex Prototype Release Manifest
 
-**Manifest date:** August 8, 2026
-**Release state:** Local, uncommitted public release candidate
+**Manifest date:** August 9, 2026
+**Release state:** Public release package v2.4.0 — committed locally; publication verification pending
 **Repository:** `ai-accountability-standards`
 **Baseline commit before this package:** `3166fbb7ab941afd2b1918268c7b569fa5bf9e82`
 **Author:** Anthony Cyle Dixon / Tony Dixon
@@ -9,9 +9,9 @@
 
 ## Release identity
 
-This manifest records the contents and status of the Tivrex public prototype package prepared on August 8, 2026.
+This manifest records the contents and boundaries of the Tivrex v2.4.0 public release package prepared on August 8–9, 2026.
 
-The package is not yet a Git commit, GitHub release, Zenodo deposit, external review result, or production deployment. Those states must be recorded only after they are independently verified.
+The package is a Git commit, but GitHub publication, Zenodo status, external review, and production deployment remain separate states that must be verified independently.
 
 ## Included public-package documents
 
@@ -112,7 +112,7 @@ Their existence or status must not be inferred from this manifest.
 
 ## Pre-publication checklist
 
-Before committing or publishing this candidate:
+Before publishing this release:
 
 - [ ] review all README links and public URLs;
 - [ ] inspect the complete Git diff;
@@ -122,9 +122,9 @@ Before committing or publishing this candidate:
 - [ ] confirm DOI and citation metadata;
 - [ ] preserve benchmark raw outputs unchanged;
 - [ ] obtain or schedule independent technical review;
-- [ ] commit and tag only after the contents are approved;
+- [x] commit and tag after the contents are approved;
 - [ ] verify the public repository and release URL after publication.
 
 ## Current release decision
 
-The package is structurally coherent enough for review and public-release preparation. It is not yet cleared as a published release because the files remain uncommitted and the independent review, final diff review, and release URL verification are still open.
+The package is structurally coherent enough for public release. Independent technical review, external acceptance, production implementation, and domain-specific validation remain open and are not implied by this release.
