@@ -1,0 +1,23 @@
+{
+  "protocol": "PIL Ablation Protocol",
+  "version": "1.0",
+  "conditions": [
+    {"id": "A", "name": "baseline", "components": []},
+    {"id": "B", "name": "fixed_instruction", "components": ["fixed_instruction"]},
+    {"id": "C", "name": "retrieved_memory", "components": ["retrieved_memory"]},
+    {"id": "D", "name": "pil", "components": ["identity", "rules", "corrections", "scars", "decision_history"]},
+    {"id": "E", "name": "full_stack", "components": ["identity", "rules", "corrections", "scars", "decision_history", "aibb", "loop_detector", "consequence_routing", "zerotx"]}
+  ],
+  "tasks": [
+    "correction_retention",
+    "cross_session_continuity",
+    "conflict_detection",
+    "number_verification",
+    "known_error_recurrence",
+    "authority_gating",
+    "consequence_routing",
+    "landmine_exclusion",
+    "regeneration_recovery",
+    "check_ride_case"
+  ]
+}

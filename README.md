@@ -12,7 +12,21 @@
 > *"The problem isn't that AI dreams. The problem is it doesn't know when it's dreaming."*  
 > — Tony Dixon
 
+## Accountable integration, not simulated humanity
+
+Tivrex is not trying to make AI human or turn it into a moral authority. The practical danger is that fluent, fast, answer-producing systems become socially treated as oracles: people mistake an answer-shaped response for a final source of what is true, right, or to be done.
+
+The bridge is **accountable integration**. Nonhuman intelligence can operate inside human systems while records, uncertainty, authority, continuity, drift detection, and responsibility remain visible. Tivrex asks what the system proposed, what the human verified, what authority was granted, what happened next, and what record remains.
+
+The system is therefore not a better oracle. It is an accountability layer around capability.
+
 ---
+
+## Start Here
+
+New to the repository? Begin with [`START_HERE.md`](./START_HERE.md), the five-minute orientation to the architecture, the local reference instrument, the verified tests, and the boundaries of what is not yet implemented.
+
+Then read [`ARCHITECTURE_MAP.md`](./ARCHITECTURE_MAP.md) for the component relationships and [`REFERENCE_IMPLEMENTATION_AND_TESTS.md`](./REFERENCE_IMPLEMENTATION_AND_TESTS.md) for the runnable code and evidence limits.
 
 ## 📊 Live Assessment Tool
 
@@ -49,7 +63,7 @@ This repository contains the technical blueprints. The book explains why those b
 
 ## What This Repository Is
 
-This repository contains an integrated system of open standards for AI accountability, AI audit trails, drift detection, human oversight, data sovereignty, and operator accountability.
+This repository contains an integrated architecture of open standards for AI accountability, AI audit trails, drift detection, human oversight, data sovereignty, and operator accountability, plus a small local reference instrument.
 
 These papers are not separate ideas. They are designed to work together as one aviation-grade accountability architecture for large language models and agentic AI systems operating in consequential domains such as healthcare, law, finance, insurance, education, government, and enterprise decision support.
 
@@ -60,6 +74,18 @@ The framework answers a simple question:
 Today, most AI deployments cannot answer that question cleanly. This repository proposes the missing accountability stack.
 
 ---
+
+## Implementation status
+
+The repository is a public architecture and reference-package release in progress.
+
+**Runnable and tested locally:** the reference stack's AIBB recorder, PIL store, and risk-tiered Action Gateway. The current repository test suite passes 3/3 tests.
+
+**Published standards and specifications:** Loop Detector, ZeroTX architecture, Missing CVR, Ethics Floor, oversight models, preflight/type-rating/check-ride standards, and related components.
+
+**Still open:** production persistence and retrieval, model adapters, executable Loop Detector service, enterprise deployment, independent scoring, independent technical review, and domain-specific implementation.
+
+The project does not claim to eliminate hallucinations, replace human responsibility, provide a finished regulated-domain product, or establish independent validation through the local tests alone.
 
 ## The Core Problem
 
@@ -98,7 +124,7 @@ This repository translates aviation-grade human-machine accountability into the 
 | Cessna-to-737 implementation scaling | **ZeroTX Deployment Tiers** | Defines Pure, Federated, and Enterprise deployment models. |
 | Check rides / recurrent evaluation | **Check-Ride Protocol** | Tests whether humans are still actively reviewing AI output or simply rubber-stamping it. |
 
-Together, these standards form a complete AI accountability stack: the recorder, the warning system, the identity layer, the human role, the oversight structure, the deployment model, and the recurrency check.
+Together, these standards define a modular AI accountability architecture: the recorder, warning systems, identity layer, human role, oversight structure, deployment model, and recurrent evaluation. Some components are published specifications; the local runnable proof instrument covers a narrower subset.
 
 ---
 
@@ -137,7 +163,7 @@ If you are new to the stack, start here:
 | Standard | File | Version | Function |
 |---|---|---|---|
 | **PIL Paradigm Paper** | [PIL_Paradigm_Paper_v1.0.md](./PIL_Paradigm_Paper_v1.0.md) | v1.0 | Standalone paradigm: training without weight updates |
-| AI Black Box Standard (AIBB) | [AIBB_Whitepaper_v2.4.md](./AIBB_Whitepaper_v2.4.md) | v2.4 | AI flight recorder / audit trail |
+| AI Black Box Standard (AIBB) | [AIBB_Whitepaper_v2.5.md](./AIBB_Whitepaper_v2.5.md) | v2.5 | AI flight recorder / audit trail |
 | Loop Detector | [Loop_Detector_Whitepaper_v1.3.md](./Loop_Detector_Whitepaper_v1.3.md) | v1.3 | Detects accountability loops and human over-reliance |
 | ZeroTX Architecture | [ZeroTX_Whitepaper_v2.0.md](./ZeroTX_Whitepaper_v2.0.md) | v2.0 | Data sovereignty / zero-transmission design / action gateway |
 | Persistent Identity Layer | [PIL_Whitepaper_v1.2.md](./PIL_Whitepaper_v1.2.md) | v1.2 | Persistent user context and identity layer |
