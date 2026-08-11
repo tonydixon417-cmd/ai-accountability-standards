@@ -211,3 +211,10 @@ Dixon, A. C. (2026). The PIL Training Layer: Behavioral Conditioning of AI Syste
 ## License
 
 Creative Commons Attribution 4.0 International (CC-BY 4.0)
+
+## v2.4.0 Public Release — Zenodo Record
+
+The public v2.4.0 release is archived and citable on Zenodo: [10.5281/zenodo.21877637](https://doi.org/10.5281/zenodo.21877637).
+
+GitHub release: [v2.4.0](https://github.com/tonydixon417-cmd/ai-accountability-standards/releases/tag/v2.4.0).
+
