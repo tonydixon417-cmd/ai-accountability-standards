@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> **HISTORICAL RELEASE RECORD — SUPERSEDED FOR CURRENT STATUS.** This file records the v2.4.0 preparation state and is preserved for auditability. Publication was subsequently completed. See [`CURRENT_STATUS.md`](./CURRENT_STATUS.md) for the authoritative current classification and v2.5.2 release state.
+
 # Tivrex Prototype Release Manifest
 
 **Manifest date:** August 9, 2026

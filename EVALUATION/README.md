@@ -1,16 +1,11 @@
-# Evaluation
+# Evaluation Materials
 
-This directory contains the empirical path for moving from architecture to evidence.
+The root `EVALUATION/` directory preserves the original protocol and task definitions.
 
-- `ABLATION_PROTOCOL_v1.0.md` — tests the contribution of the PIL and full accountability stack.
+The current unchanged raw C0–C3 outputs and preserved flight-check evidence are browsable in:
 
-A future release should add:
+- [`../crop_1_expanded/CROP_1_TRANSFER_PACKAGE_Aug10_2026/05_evaluation/`](../crop_1_expanded/CROP_1_TRANSFER_PACKAGE_Aug10_2026/05_evaluation/)
 
-- machine-readable task cases;
-- condition-specific prompt/context bundles;
-- raw model outputs;
-- scoring scripts;
-- reproducibility metadata;
-- a results report with failures included.
+Raw outputs are evidence inputs, not proof of a general behavioral effect. Independent external scoring remains open. Do not call founder-run tests, AI-assisted scoring, or internal hash verification independent validation.
 
-Do not publish a green score without the raw outputs and the failed cases.
+See [`../CURRENT_STATUS.md`](../CURRENT_STATUS.md) for the current claim boundary and [`../INDEPENDENT_REVIEW_PROTOCOL.md`](../INDEPENDENT_REVIEW_PROTOCOL.md) for the reproduction method.

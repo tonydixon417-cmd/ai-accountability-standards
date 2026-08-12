@@ -55,6 +55,8 @@ From the repository root, run:
 ```bash
 python -m reference_stack.demo
 python -m unittest reference_stack.test_reference_stack -v
+cd crop_1_expanded
+python -m unittest CROP_1_TRANSFER_PACKAGE_Aug10_2026.03_reference_stack.test_reference_stack -v
 ```
 
 Record:
@@ -66,7 +68,7 @@ Record:
 - pass/fail result;
 - warnings, environment changes, or manual interventions.
 
-The expected current repository result is three tests passing. If the result differs, preserve the complete output and explain the difference.
+The root baseline is expected to pass three tests. The expanded Crop #1 suite is expected to pass four tests. Run both and preserve any difference.
 
 ### Stage 3 — Code inspection
 
@@ -221,7 +223,8 @@ It would not, by itself, establish that:
 ## Review status
 
 - Protocol: prepared for external technical review.
-- Local reference tests: verified 3/3.
+- Root baseline tests: verified 3/3.
+- Expanded Crop #1 tests: verified 4/4.
 - Independent reviewer: not yet confirmed.
-- Independent scoring of preserved benchmark outputs: open.
+- Independent external scoring of preserved benchmark outputs: open.
 - Public release claim: limited to the evidence actually inspected.

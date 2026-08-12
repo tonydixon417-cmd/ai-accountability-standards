@@ -13,7 +13,7 @@ Use **Anthony Cyle Dixon** for formal citation, authorship, and legal or archiva
 
 ## Recommended repository citation
 
-Dixon, Anthony Cyle. *AI Accountability Standards: An Aviation-Grade Governance Stack for AI Audit Trails, Drift Detection, Human Oversight, and Data Sovereignty*. Version 2.5.2. Zenodo, 2026. Concept DOI: <https://doi.org/10.5281/zenodo.20883473>.
+Dixon, Anthony Cyle. *AI Accountability Standards: An Aviation-Grade Governance Stack for AI Audit Trails, Drift Detection, Human Oversight, and Data Sovereignty*. Version 2.4.0. Zenodo, 2026. DOI: <https://doi.org/10.5281/zenodo.21322039>.
 
 The repository's `CITATION.cff` file is the machine-readable citation source for this release.
 
@@ -67,8 +67,7 @@ The current repository test suite verifies three local behaviors: hash-chain tam
 ## Related public materials
 
 - Canonical repository: <https://github.com/tonydixon417-cmd/ai-accountability-standards>
-- Repository concept DOI: <https://doi.org/10.5281/zenodo.20883473>
-- Verified Crop #1 release DOI (v2.5.1): <https://doi.org/10.5281/zenodo.21896643>
+- Repository DOI: <https://doi.org/10.5281/zenodo.21322039>
 - PIL paradigm DOI: <https://doi.org/10.5281/zenodo.21465514>
 - Tivrex AI Accountability Assessment: <https://tivrex-flight-check.base44.app>
 - *The Becoming* companion book: <https://www.amazon.com/dp/B0H9CX7CQ7>

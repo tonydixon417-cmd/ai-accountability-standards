@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-08-12T01:46:47.764172+00:00",
+  "files": {
+    "continuity.sqlite3": {
+      "bytes": 12288,
+      "sha256": "aa3aad6b9b863f9786088cba31f6db1309ebd3f33f7550e7705284aa1331ecb2"
+    },
+    "events.jsonl": {
+      "bytes": 623,
+      "sha256": "322e2163d82e2c295bc666d9d7de28f6246312250a4cdbf050de111e1f9666ed"
+    },
+    "result.json": {
+      "bytes": 431,
+      "sha256": "f5e7d9c7ecbf028a3cd8a79b2826bd66aec6f59336565359edcae7bad44140ac"
+    }
+  },
+  "run_id": "20260812T014647.760185Z"
+}

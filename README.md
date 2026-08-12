@@ -1,10 +1,10 @@
-# AI Accountability Standards — The Aviation-Grade Accountability Stack for AI Systems
+# Tivrex — AI Accountability and Continuity Operating Layer
 
 **Author:** Anthony Cyle Dixon  
 **Organization:** Contrail Equity Strategies LLC  
 **Repository:** https://github.com/Tonydixon417-cmd/ai-accountability-standards  
 **Concept DOI (latest version):** [10.5281/zenodo.20883473](https://doi.org/10.5281/zenodo.20883473)<br>
-**Current corrective release:** [v2.5.1](https://github.com/tonydixon417-cmd/ai-accountability-standards/releases/tag/v2.5.1)<br>
+**Final reference release:** [v2.5.2](https://github.com/tonydixon417-cmd/ai-accountability-standards/releases/tag/v2.5.2)<br>
 **PIL Paradigm Paper:** [10.5281/zenodo.21465514](https://doi.org/10.5281/zenodo.21465514)  
 **Status:** Defensive publication / prior art / open standards framework  
 
@@ -12,6 +12,14 @@
 
 > *"The problem isn't that AI dreams. The problem is it doesn't know when it's dreaming."*  
 > — Tony Dixon
+
+## Sixty-second description
+
+Tivrex is a public accountability and continuity architecture for placing deterministic controls around nondeterministic AI systems. It preserves decision evidence and human-authored corrections, separates model proposals from external execution, and blocks configured high-risk actions until explicit approval.
+
+The repository contains standards plus a bounded runnable reference implementation. **It is not a production operating platform, hosted service, regulatory certification, or independently validated enterprise product.**
+
+Current evidence and maturity: [`CURRENT_STATUS.md`](./CURRENT_STATUS.md). Browsable Crop #1 implementation: [`crop_1_expanded/`](./crop_1_expanded/).
 
 ## Accountable integration, not simulated humanity
 
@@ -25,9 +33,7 @@ The system is therefore not a better oracle. It is an accountability layer aroun
 
 ## Start Here
 
-New to the repository? Begin with [`START_HERE.md`](./START_HERE.md), the five-minute orientation to the architecture, the local reference instrument, the verified tests, and the boundaries of what is not yet implemented.
-
-Then read [`ARCHITECTURE_MAP.md`](./ARCHITECTURE_MAP.md) for the component relationships and [`REFERENCE_IMPLEMENTATION_AND_TESTS.md`](./REFERENCE_IMPLEMENTATION_AND_TESTS.md) for the runnable code and evidence limits.
+Begin with [`CURRENT_STATUS.md`](./CURRENT_STATUS.md), then [`START_HERE.md`](./START_HERE.md). The expanded, searchable Crop #1 artifact is under [`crop_1_expanded/`](./crop_1_expanded/). Read [`REFERENCE_IMPLEMENTATION_AND_TESTS.md`](./REFERENCE_IMPLEMENTATION_AND_TESTS.md) for commands and evidence limits.
 
 ## 📊 Live Assessment Tool
 
@@ -80,7 +86,7 @@ Today, most AI deployments cannot answer that question cleanly. This repository 
 
 The repository is a public architecture and bounded reference-package release.
 
-**Runnable reference baseline:** the root reference stack contains the public AIBB recorder, PIL store, risk-tiered Action Gateway, and three-test baseline.
+**Runnable reference layers:** the root contains the original three-test baseline. The current four-test Crop #1 code and evidence are browsable under [`crop_1_expanded/`](./crop_1_expanded/) and automatically checked in CI.
 
 **Frozen Crop #1 reference artifact:** [`releases/v2.5.1/TIVREX_CROP_1_VERIFIED_Aug11_2026.zip`](./releases/v2.5.1/TIVREX_CROP_1_VERIFIED_Aug11_2026.zip) preserves the 54-file verified package. It adds durable SQLite continuity storage, a real-model adapter, a four-test deterministic suite, and preserved dry-run, failed-run, and successful live-model evidence. Its SHA-256 is `25310c1d827d7a498ebe7f5016ed2d61ea293cc90f53df2570a68fee8d80c752`.
 
@@ -205,7 +211,7 @@ If your organization is deploying AI into decisions that affect money, health, l
 
 ## Citation
 
-Dixon, A. C. (2026). AI Accountability Standards — Aviation-Grade Framework for Large Language Models. Contrail Equity Strategies LLC. DOI: [10.5281/zenodo.21322039](https://doi.org/10.5281/zenodo.21322039)
+Dixon, A. C. (2026). *Tivrex — AI Accountability and Continuity Operating Layer*. Version 2.5.2. Contrail Equity Strategies LLC. Concept DOI: [10.5281/zenodo.20883473](https://doi.org/10.5281/zenodo.20883473)
 
 Dixon, A. C. (2026). The PIL Training Layer: Behavioral Conditioning of AI Systems Without Weight Modification. Zenodo. DOI: [10.5281/zenodo.21465514](https://doi.org/10.5281/zenodo.21465514)
 
@@ -217,11 +223,11 @@ Creative Commons Attribution 4.0 International (CC-BY 4.0)
 
 ## Current release and archival record
 
-**v2.5.1 — Zenodo parity correction:** commits the exact frozen Crop #1 ZIP and checksum into the repository tree so the Git tag and automatic Zenodo archive contain the canonical artifact. See [`ZENODO_PARITY_CORRECTION_v2.5.1.md`](./ZENODO_PARITY_CORRECTION_v2.5.1.md).
+**v2.5.2 — final visibility and status correction:** expands the unchanged Crop #1 artifact into browsable repository files, adds automated integrity and test checks, and establishes one authoritative current-status page. No new product functionality or production-readiness claim is added.
 
-GitHub release: [v2.5.1](https://github.com/tonydixon417-cmd/ai-accountability-standards/releases/tag/v2.5.1).
+GitHub release: [v2.5.2](https://github.com/tonydixon417-cmd/ai-accountability-standards/releases/tag/v2.5.2).
 
 Concept DOI resolving to the latest Zenodo version: [10.5281/zenodo.20883473](https://doi.org/10.5281/zenodo.20883473).
 
-**Release history:** v2.5.0 remains public but its automatic Zenodo archive captured the tagged source tree without the separately uploaded GitHub Release assets. v2.4.0 remains archived at [10.5281/zenodo.21877637](https://doi.org/10.5281/zenodo.21877637).
+**Release history:** v2.5.1 established GitHub–Zenodo parity for the canonical frozen Crop. v2.5.0 remains public as the initial incomplete parity attempt. v2.4.0 remains archived at [10.5281/zenodo.21877637](https://doi.org/10.5281/zenodo.21877637).
 

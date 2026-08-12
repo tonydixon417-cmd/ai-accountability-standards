@@ -1,0 +1,43 @@
+name: Reference Integrity and Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify canonical Crop ZIP checksum
+        working-directory: releases/v2.5.1
+        run: sha256sum -c TIVREX_CROP_1_VERIFIED_Aug11_2026.sha256
+      - name: Verify expanded Crop matches frozen ZIP
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile
+          archive = Path("releases/v2.5.1/TIVREX_CROP_1_VERIFIED_Aug11_2026.zip")
+          expanded = Path("crop_1_expanded")
+          with zipfile.ZipFile(archive) as z:
+              members = [i for i in z.infolist() if not i.is_dir()]
+              assert len(members) == 54, len(members)
+              for item in members:
+                  target = expanded / item.filename
+                  assert target.is_file(), f"missing: {target}"
+                  assert target.read_bytes() == z.read(item), f"mismatch: {item.filename}"
+          print("Expanded Crop matches all 54 frozen archive files")
+          PY
+      - name: Run root baseline tests
+        run: python -m unittest reference_stack.test_reference_stack -v
+      - name: Run Crop 1 deterministic tests
+        working-directory: crop_1_expanded
+        run: python -m unittest CROP_1_TRANSFER_PACKAGE_Aug10_2026.03_reference_stack.test_reference_stack -v
