@@ -3,7 +3,8 @@
 **Author:** Anthony Cyle Dixon  
 **Organization:** Contrail Equity Strategies LLC  
 **Repository:** https://github.com/Tonydixon417-cmd/ai-accountability-standards  
-**DOI:** [10.5281/zenodo.21322039](https://doi.org/10.5281/zenodo.21322039)  
+**Concept DOI (latest version):** [10.5281/zenodo.20883473](https://doi.org/10.5281/zenodo.20883473)<br>
+**Current corrective release:** [v2.5.1](https://github.com/tonydixon417-cmd/ai-accountability-standards/releases/tag/v2.5.1)<br>
 **PIL Paradigm Paper:** [10.5281/zenodo.21465514](https://doi.org/10.5281/zenodo.21465514)  
 **Status:** Defensive publication / prior art / open standards framework  
 
@@ -77,15 +78,17 @@ Today, most AI deployments cannot answer that question cleanly. This repository 
 
 ## Implementation status
 
-The repository is a public architecture and reference-package release in progress.
+The repository is a public architecture and bounded reference-package release.
 
-**Runnable and tested locally:** the reference stack's AIBB recorder, PIL store, and risk-tiered Action Gateway. The current repository test suite passes 3/3 tests.
+**Runnable reference baseline:** the root reference stack contains the public AIBB recorder, PIL store, risk-tiered Action Gateway, and three-test baseline.
+
+**Frozen Crop #1 reference artifact:** [`releases/v2.5.1/TIVREX_CROP_1_VERIFIED_Aug11_2026.zip`](./releases/v2.5.1/TIVREX_CROP_1_VERIFIED_Aug11_2026.zip) preserves the 54-file verified package. It adds durable SQLite continuity storage, a real-model adapter, a four-test deterministic suite, and preserved dry-run, failed-run, and successful live-model evidence. Its SHA-256 is `25310c1d827d7a498ebe7f5016ed2d61ea293cc90f53df2570a68fee8d80c752`.
 
 **Published standards and specifications:** Loop Detector, ZeroTX architecture, Missing CVR, Ethics Floor, oversight models, preflight/type-rating/check-ride standards, and related components.
 
-**Still open:** production persistence and retrieval, model adapters, executable Loop Detector service, enterprise deployment, independent scoring, independent technical review, and domain-specific implementation.
+**Still open:** production hardening, executable production Loop Detector service, enterprise deployment, broad adversarial testing, independent external technical review, and domain-specific implementation.
 
-The project does not claim to eliminate hallucinations, replace human responsibility, provide a finished regulated-domain product, or establish independent validation through the local tests alone.
+The project does not claim to eliminate hallucinations, replace human responsibility, provide a finished regulated-domain product, or establish independent validation through the internal tests and bounded live run alone.
 
 ## The Core Problem
 
@@ -212,9 +215,13 @@ Dixon, A. C. (2026). The PIL Training Layer: Behavioral Conditioning of AI Syste
 
 Creative Commons Attribution 4.0 International (CC-BY 4.0)
 
-## v2.4.0 Public Release — Zenodo Record
+## Current release and archival record
 
-The public v2.4.0 release is archived and citable on Zenodo: [10.5281/zenodo.21877637](https://doi.org/10.5281/zenodo.21877637).
+**v2.5.1 — Zenodo parity correction:** commits the exact frozen Crop #1 ZIP and checksum into the repository tree so the Git tag and automatic Zenodo archive contain the canonical artifact. See [`ZENODO_PARITY_CORRECTION_v2.5.1.md`](./ZENODO_PARITY_CORRECTION_v2.5.1.md).
 
-GitHub release: [v2.4.0](https://github.com/tonydixon417-cmd/ai-accountability-standards/releases/tag/v2.4.0).
+GitHub release: [v2.5.1](https://github.com/tonydixon417-cmd/ai-accountability-standards/releases/tag/v2.5.1).
+
+Concept DOI resolving to the latest Zenodo version: [10.5281/zenodo.20883473](https://doi.org/10.5281/zenodo.20883473).
+
+**Release history:** v2.5.0 remains public but its automatic Zenodo archive captured the tagged source tree without the separately uploaded GitHub Release assets. v2.4.0 remains archived at [10.5281/zenodo.21877637](https://doi.org/10.5281/zenodo.21877637).
 

@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 title: "AI Accountability Standards: An Aviation-Grade Governance Stack for AI Audit Trails, Drift Detection, Human Oversight, and Data Sovereignty"
-version: "2.4.0"
-date-released: "2026-08-09"
-doi: 10.5281/zenodo.21322039
+version: "2.5.1"
+date-released: "2026-08-12"
+doi: 10.5281/zenodo.20883473
 url: "https://github.com/tonydixon417-cmd/ai-accountability-standards"
 repository-code: "https://github.com/tonydixon417-cmd/ai-accountability-standards"
 license: CC-BY-4.0
