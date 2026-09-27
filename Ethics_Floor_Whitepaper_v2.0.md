@@ -181,7 +181,9 @@ Metz, T. "Ubuntu as a Moral Theory and Human Rights in South Africa." *African H
 
 United Nations. *Universal Declaration of Human Rights.* 1948.
 
-World Journal of Advanced Engineering and Technology. Cross-cultural AI ethics convergence literature. 2025.
+Jobin, A., Ienca, M., and Vayena, E. “The global landscape of AI ethics guidelines.” *Nature Machine Intelligence* 1.9 (2019): 389–399. Survey of 84 AI ethics guideline documents worldwide, finding convergence on transparency, justice and fairness, non-maleficence, and responsibility.
+
+Curry, O. S., Mullins, D. A., and Whitehouse, H. “Is it good to cooperate? Testing the theory of morality-as-cooperation in 60 societies.” *Current Anthropology* 60.1 (2019): 47–69.
 
 ---
 
