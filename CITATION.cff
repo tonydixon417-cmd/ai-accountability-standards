@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
 title: "Tivrex: An AI Accountability and Continuity Operating Layer — Public Architecture and Bounded Reference Implementation"
-version: "2.5.2"
-date-released: "2026-08-12"
+version: "2.5.3"
+date-released: "2026-10-28"
 doi: 10.5281/zenodo.20883473
 url: "https://github.com/tonydixon417-cmd/ai-accountability-standards"
 repository-code: "https://github.com/tonydixon417-cmd/ai-accountability-standards"
