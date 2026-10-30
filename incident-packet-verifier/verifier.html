@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Incident Packet Verifier — INC-1 v0.1</title>
+<style>
+  :root { --ink:#12161c; --muted:#5c6672; --line:#d8dee6; --bg:#fbfcfd; --card:#fff;
+          --ok:#0f6b3f; --warn:#8a5a00; --bad:#8c1d1d; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#e9eef4; --muted:#9aa7b5; --line:#2a323c; --bg:#0f1319; --card:#161c24;
+            --ok:#5fd08b; --warn:#e0b354; --bad:#f08a8a; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:28px 20px 60px; background:var(--bg); color:var(--ink);
+         font:15px/1.55 ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:820px; margin:0 auto; }
+  h1 { font-size:21px; margin:0 0 4px; letter-spacing:-.01em; }
+  .sub { color:var(--muted); font-size:13px; margin-bottom:22px; }
+  .drop { border:1.5px dashed var(--line); border-radius:10px; padding:26px; text-align:center;
+          background:var(--card); }
+  .drop.drag { border-color:var(--ink); }
+  .drop p { margin:0 0 12px; color:var(--muted); font-size:13px; }
+  input[type=file] { display:none; }
+  button { font:inherit; padding:9px 16px; border-radius:8px; border:1px solid var(--line);
+           background:var(--card); color:var(--ink); cursor:pointer; }
+  button:hover { border-color:var(--ink); }
+  .verdict { margin:22px 0 8px; padding:16px 18px; border-radius:10px; border:1px solid var(--line);
+             background:var(--card); }
+  .verdict h2 { margin:0 0 4px; font-size:18px; }
+  .v-ok h2 { color:var(--ok); } .v-warn h2 { color:var(--warn); } .v-bad h2 { color:var(--bad); }
+  .verdict p { margin:0; color:var(--muted); font-size:13px; }
+  table { width:100%; border-collapse:collapse; margin-top:14px; font-size:13.5px; }
+  th,td { text-align:left; padding:7px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { color:var(--muted); font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.04em; }
+  .flag { font-weight:600; } .flag.ok{color:var(--ok)} .flag.warn{color:var(--warn)} .flag.bad{color:var(--bad)}
+  section { margin-top:26px; }
+  h3 { font-size:13px; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); margin:0 0 8px; }
+  ul { margin:0; padding-left:20px; } li { margin-bottom:5px; font-size:13.5px; color:var(--muted); }
+  code { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:12.5px; }
+  .foot { margin-top:34px; padding-top:14px; border-top:1px solid var(--line); color:var(--muted);
+          font-size:12.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Incident Packet Verifier</h1>
+  <div class="sub">INC-1 v0.1 &middot; runs entirely offline &middot; no account, no upload, no network</div>
+
+  <div class="drop" id="drop">
+    <p>Select the packet folder (manifest.json, events.jsonl, and its companions).<br>
+       Nothing leaves this machine. The verification runs in this page.</p>
+    <button id="pick">Choose packet folder</button>
+    <input type="file" id="files" webkitdirectory directory multiple>
+  </div>
+
+  <div id="out"></div>
+
+  <section>
+    <h3>What this does not prove</h3>
+    <ul>
+      <li>That the record is complete. It proves the events present were not altered after sealing. A record that was never written cannot be checked.</li>
+      <li>That the model was honest. A faithful record of a confident wrong answer is still a faithful record.</li>
+      <li>That the human was competent. It reports whether an approval exists, not whether anyone read the thing.</li>
+      <li>That redaction was minimal. It reports that redactions were committed to, and how many.</li>
+      <li>That the timestamp is real until the detached time-stamp token is validated by an independent tool against the imprint shown below.</li>
+    </ul>
+  </section>
+
+  <div class="foot">Verification is mechanical. Interpretation is the reader's. This page will not give you a score.</div>
+</div>
+
+<script>
+/* <core> ------------------------------------------------------------------ */
+const CORE = (() => {
+
+  function canonical(value) {
+    if (value === null || typeof value !== "object") return JSON.stringify(value);
+    if (Array.isArray(value)) return "[" + value.map(canonical).join(",") + "]";
+    const keys = Object.keys(value).sort();
+    return "{" + keys.map(k => JSON.stringify(k) + ":" + canonical(value[k])).join(",") + "}";
+  }
+
+  async function sha256Hex(str) {
+    const buf = new TextEncoder().encode(str);
+    const digest = await crypto.subtle.digest("SHA-256", buf);
+    return [...new Uint8Array(digest)].map(b => b.toString(16).padStart(2, "0")).join("");
+  }
+
+  function stripForHash(ev) {
+    const copy = Object.assign({}, ev);
+    delete copy.hash;
+    delete copy.sig;
+    return copy;
+  }
+
+  async function verify(files) {
+    const findings = [];
+    const add = (level, check, detail) => findings.push({ level, check, detail });
+    const manifestRaw = files["manifest.json"];
+    let manifest = null;
+
+    if (!manifestRaw) return { verdict: "FAILED", findings: [{ level: "bad", check: "manifest", detail: "manifest.json not present in the selection." }], stats: {} };
+    try { manifest = JSON.parse(manifestRaw); }
+    catch (e) { return { verdict: "FAILED", findings: [{ level: "bad", check: "manifest", detail: "manifest.json is not valid JSON." }], stats: {} }; }
+
+    const required = ["packet_version","packet_id","created_at","producer","incident","genesis_hash","event_count","heartbeat_seconds","anchor"];
+    const missing = required.filter(k => !(k in manifest));
+    if (missing.length) add("bad", "manifest fields", "missing: " + missing.join(", "));
+    else add("ok", "manifest fields", "all required fields present");
+
+    const raw = files["events.jsonl"];
+    if (!raw) { add("bad", "events.jsonl", "not present"); return { verdict: "FAILED", findings, stats: {} }; }
+
+    const lines = raw.split("\n").map(l => l.trim()).filter(l => l.length);
+    const events = [];
+    let parseBad = 0;
+    for (const line of lines) {
+      try { events.push(JSON.parse(line)); } catch (e) { parseBad++; }
+    }
+    if (parseBad) add("bad", "events parse", parseBad + " unparseable line(s)");
+    else add("ok", "events parse", events.length + " events");
+
+    if (typeof manifest.event_count === "number") {
+      if (manifest.event_count === events.length) add("ok", "event count", manifest.event_count + " matches manifest");
+      else add("bad", "event count", "manifest says " + manifest.event_count + ", file contains " + events.length);
+    }
+
+    let hashBad = 0, chainBad = 0, seqBad = 0, gapTotal = 0;
+    let prev = null;
+    for (let i = 0; i < events.length; i++) {
+      const ev = events[i];
+      const recomputed = await sha256Hex(canonical(stripForHash(ev)));
+      if (recomputed !== ev.hash) hashBad++;
+      const expectPrev = i === 0 ? manifest.genesis_hash : prev;
+      if (ev.prev_hash !== expectPrev) chainBad++;
+      if (i > 0 && ev.seq !== events[i-1].seq + 1) { seqBad++; gapTotal += Math.max(0, (ev.seq - events[i-1].seq - 1)); }
+      prev = ev.hash;
+    }
+    add(hashBad ? "bad" : "ok", "event hashes", hashBad ? hashBad + " of " + events.length + " do not match their recorded hash" : "all " + events.length + " recompute exactly");
+    add(chainBad ? "bad" : "ok", "hash chain", chainBad ? chainBad + " broken link(s)" : "unbroken from genesis");
+    if (seqBad) add("warn", "sequence", seqBad + " discontinuity(ies), " + gapTotal + " sequence number(s) missing from the record");
+    else add("ok", "sequence", "contiguous");
+
+    if (typeof manifest.heartbeat_seconds === "number" && events.length > 1) {
+      let longGaps = 0;
+      for (let i = 1; i < events.length; i++) {
+        const a = Date.parse(events[i-1].ts_utc), b = Date.parse(events[i].ts_utc);
+        if (!isNaN(a) && !isNaN(b) && (b - a) > manifest.heartbeat_seconds * 1000 * 3) longGaps++;
+      }
+      if (longGaps) add("warn", "heartbeat", longGaps + " interval(s) longer than three heartbeats. The system may have been silent, or not logging.");
+      else add("ok", "heartbeat", "no interval exceeded three heartbeats");
+    }
+
+    const digests = manifest.file_digests || {};
+    let digestBad = 0, digestChecked = 0;
+    for (const [name, want] of Object.entries(digests)) {
+      if (!(name in files)) { add("warn", "packet file", name + " is listed in the manifest and not present"); continue; }
+      const got = await sha256Hex(files[name]);
+      digestChecked++;
+      if (got !== want) digestBad++;
+    }
+    if (digestChecked) add(digestBad ? "bad" : "ok", "companion files", digestBad ? digestBad + " digest mismatch(es)" : digestChecked + " file(s) match their recorded digest");
+
+    const decisionEvents = events.filter(e => e.payload && e.payload.decision === true);
+    const approvalEvents = events.filter(e => e.event_type === "human_approval");
+    if (decisionEvents.length) {
+      if (approvalEvents.length >= decisionEvents.length) add("ok", "approvals", approvalEvents.length + " human approvals for " + decisionEvents.length + " decisions");
+      else add("warn", "approvals", decisionEvents.length + " recorded decisions, " + approvalEvents.length + " recorded human approvals");
+    }
+
+    const redactions = manifest.redactions || [];
+    add(redactions.length ? "warn" : "ok", "redactions", redactions.length ? redactions.length + " field(s) withheld with commitments recorded" : "none declared");
+
+    let imprint = null;
+    try { imprint = await sha256Hex(raw); } catch (e) {}
+    const anchorImprint = manifest.anchor && manifest.anchor.imprint_sha256;
+    if (anchorImprint && imprint) {
+      if (anchorImprint === imprint) add("ok", "seal imprint", "manifest imprint matches events.jsonl");
+      else add("bad", "seal imprint", "manifest imprint does not match events.jsonl. The anchor does not cover this file.");
+    }
+
+    const bad = findings.filter(f => f.level === "bad").length;
+    const warn = findings.filter(f => f.level === "warn").length;
+    const verdict = bad ? "FAILED" : (warn ? "INTACT WITH GAPS" : "INTACT");
+
+    return {
+      verdict, findings,
+      stats: { events: events.length, decisions: decisionEvents.length, approvals: approvalEvents.length,
+               gaps: gapTotal, redactions: redactions.length, imprint,
+               packet_id: manifest.packet_id, declared: manifest.incident && manifest.incident.declared_at,
+               producer: manifest.producer && manifest.producer.name }
+    };
+  }
+
+  return { canonical, sha256Hex, stripForHash, verify };
+})();
+/* </core> ----------------------------------------------------------------- */
+
+if (typeof window !== "undefined" && typeof document !== "undefined") {
+  const out = document.getElementById("out");
+  const input = document.getElementById("files");
+  const drop = document.getElementById("drop");
+  document.getElementById("pick").onclick = () => input.click();
+  input.onchange = () => handle(input.files);
+  ["dragover","dragenter"].forEach(t => drop.addEventListener(t, e => { e.preventDefault(); drop.classList.add("drag"); }));
+  ["dragleave","drop"].forEach(t => drop.addEventListener(t, e => { e.preventDefault(); drop.classList.remove("drag"); }));
+  drop.addEventListener("drop", e => { if (e.dataTransfer.files.length) handle(e.dataTransfer.files); });
+
+  async function handle(fileList) {
+    const files = {};
+    for (const f of fileList) {
+      const name = f.name;
+      if (/\.(json|jsonl|tsr|txt|md)$/i.test(name) || name === "manifest.json") files[name] = await f.text();
+    }
+    const result = await CORE.verify(files);
+    render(result);
+  }
+
+  function render(r) {
+    const cls = r.verdict === "INTACT" ? "v-ok" : r.verdict === "FAILED" ? "v-bad" : "v-warn";
+    const blurb = r.verdict === "INTACT"
+      ? "The record is internally consistent and unaltered. Read the limits below before you rely on it."
+      : r.verdict === "INTACT WITH GAPS"
+      ? "The record was not altered, and it has holes. A hole is a finding, not a failure of the tool."
+      : "The record fails a mechanical check. Do not rely on it as evidence of what the system did.";
+    let html = '<div class="verdict ' + cls + '"><h2>' + r.verdict + '</h2><p>' + blurb + '</p></div>';
+    if (r.stats && r.stats.packet_id) {
+      html += '<table><tr><th>Packet</th><td><code>' + esc(r.stats.packet_id) + '</code></td></tr>' +
+              '<tr><th>Declared</th><td>' + esc(r.stats.declared || "not stated") + '</td></tr>' +
+              '<tr><th>Producer</th><td>' + esc(r.stats.producer || "not stated") + '</td></tr>' +
+              '<tr><th>Events</th><td>' + r.stats.events + '</td></tr>' +
+              '<tr><th>Decisions / approvals</th><td>' + r.stats.decisions + ' / ' + r.stats.approvals + '</td></tr>' +
+              '<tr><th>Missing sequence numbers</th><td>' + r.stats.gaps + '</td></tr>' +
+              '<tr><th>Redacted fields</th><td>' + r.stats.redactions + '</td></tr>' +
+              '<tr><th>events.jsonl SHA-256</th><td><code>' + esc(r.stats.imprint || "") + '</code></td></tr></table>';
+    }
+    html += '<table><tr><th>Check</th><th>Result</th><th>Detail</th></tr>';
+    for (const f of r.findings) {
+      html += '<tr><td>' + esc(f.check) + '</td><td class="flag ' + f.level + '">' + f.level.toUpperCase() +
+              '</td><td>' + esc(f.detail) + '</td></tr>';
+    }
+    html += '</table>';
+    out.innerHTML = html;
+  }
+  function esc(s) { return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+}
+</script>
+</body>
+</html>
