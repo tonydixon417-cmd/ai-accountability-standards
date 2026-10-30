@@ -1,0 +1,30 @@
+{
+  "anchor": {
+    "imprint_sha256": "5630f146dc63728d52b3c91749b97226f193cb4e6576030716da5f3fcb0cccd4",
+    "token_file": "packet.tsr",
+    "tsa_url": "https://freetsa.org/tsr"
+  },
+  "created_at": "2026-10-29T20:07:00Z",
+  "event_count": 6,
+  "file_digests": {
+    "report.md": "171770087a14ebaa1cf07c324a3714cca0a5e3931cba494e0961233a20e0f10a"
+  },
+  "genesis_hash": "b706cbdc3cd90ed1b76353b1589009520e497803bac084f8e7b4c8a6a2c8a98e",
+  "heartbeat_seconds": 30,
+  "incident": {
+    "declared_at": "2026-10-29T20:07:00Z",
+    "declared_by": "A. Dixon",
+    "summary": "synthetic test packet"
+  },
+  "limits": [
+    "Synthetic test data."
+  ],
+  "packet_id": "INC-1:TEST-0001",
+  "packet_version": "INC-1/0.1",
+  "producer": {
+    "agent": "INC-1 exporter 0.1",
+    "contact": "operator",
+    "name": "Contrail Equity Strategies LLC"
+  },
+  "redactions": []
+}
