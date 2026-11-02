@@ -3,7 +3,6 @@ message: "If you use this work, please cite it as below."
 title: "Tivrex: An AI Accountability and Continuity Operating Layer — Public Architecture and Bounded Reference Implementation"
 version: "2.5.3"
 date-released: "2026-10-28"
-doi: 10.5281/zenodo.20883473
 url: "https://github.com/tonydixon417-cmd/ai-accountability-standards"
 repository-code: "https://github.com/tonydixon417-cmd/ai-accountability-standards"
 license: CC-BY-4.0
@@ -61,5 +60,3 @@ preferred-citation:
     - family-names: Dixon
       given-names: Anthony Cyle
   date-released: "2026-07-17"
-  doi: 10.5281/zenodo.21465514
-  url: "https://doi.org/10.5281/zenodo.21465514"

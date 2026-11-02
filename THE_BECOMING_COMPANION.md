@@ -10,7 +10,7 @@ Published July 18, 2026 — Amazon KDP
 
 ## What This Document Is
 
-This is the companion guide to *The Becoming*, the narrative and human-factors layer of the AI Accountability Standards architecture. The technical specifications live in the [GitHub repository](https://github.com/Tonydixon417-cmd/ai-accountability-standards) and are archived on [Zenodo](https://doi.org/10.5281/zenodo.21322039). This guide maps the book's argument to those technical components — connecting the story to the blueprint.
+This is the companion guide to *The Becoming*, the narrative and human-factors layer of the AI Accountability Standards architecture. The technical specifications live in the [GitHub repository](https://github.com/Tonydixon417-cmd/ai-accountability-standards) and are archived on [Zenodo]((Zenodo deposit removed by Zenodo 2026-10-30; see https://github.com/tonydixon417-cmd/ai-accountability-standards)). This guide maps the book's argument to those technical components — connecting the story to the blueprint.
 
 The book explains *why* the architecture matters. The repository explains *how* it works. This guide connects the two.
 
@@ -249,7 +249,7 @@ AI needs the same. This book is the argument. The repository is the blueprint. T
 **Organization:** Contrail Equity Strategies LLC (Tivrex)
 **Book:** *The Becoming: An AI Accountability Systems Architect's Flight Plan* — available on Amazon
 **Repository:** https://github.com/Tonydixon417-cmd/ai-accountability-standards
-**DOI:** https://doi.org/10.5281/zenodo.21322039
+**DOI:** (Zenodo deposit removed by Zenodo 2026-10-30; see https://github.com/tonydixon417-cmd/ai-accountability-standards)
 **Copyright:** All standards and specifications are registered with the US Copyright Office. The book is a separate copyrighted work.
 
 ---

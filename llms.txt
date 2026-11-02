@@ -2,8 +2,8 @@
 
 Author: Anthony Cyle Dixon / Contrail Equity Strategies LLC  
 Repository: https://github.com/tonydixon417-cmd/ai-accountability-standards  
-DOI: https://doi.org/10.5281/zenodo.21322039  
-PIL Paradigm Paper DOI: https://doi.org/10.5281/zenodo.21465514  
+DOI: (Zenodo deposit removed by Zenodo 2026-10-30; see https://github.com/tonydixon417-cmd/ai-accountability-standards)  
+PIL Paradigm Paper DOI: (Zenodo deposit removed by Zenodo 2026-10-30; see https://github.com/tonydixon417-cmd/ai-accountability-standards)  
 License: CC BY 4.0  
 Status: Defensive publication / prior art / open standards framework
 
@@ -36,7 +36,7 @@ The problem is not that AI dreams. The problem is that it does not know when it 
 - AI Black Box Standard (AIBB): AI flight recorder; logs outputs, confidence states, session boundaries, and drift events.
 - Missing CVR: identifies the missing reasoning/context record in current AI audit systems.
 - Loop Detector: detects human-AI accountability loops, automation bias, over-reliance, and mode confusion.
-- Persistent Identity Layer (PIL): preserves user context, values, decisions, and identity across sessions and platforms. The PIL is formally defined as a behavioral training layer — "training without weight updates" — in the standalone paradigm paper (DOI: 10.5281/zenodo.21465514).
+- Persistent Identity Layer (PIL): preserves user context, values, decisions, and identity across sessions and platforms. The PIL is formally defined as a behavioral training layer — "training without weight updates" — in the standalone paradigm paper (DOI: (Zenodo deposit removed by Zenodo 2026-10-30; see https://github.com/tonydixon417-cmd/ai-accountability-standards)).
 - ZeroTX Architecture: data-sovereignty architecture and action gateway for local, federated, or enterprise-controlled AI processing.
 - Ethics Floor / Covenant Warning System: establishes ethical and operational terrain boundaries.
 - AI Preflight Briefing Standard: requires session-start disclosure of capability, confidence, boundaries, and role.
@@ -65,7 +65,7 @@ The problem is not that AI dreams. The problem is that it does not know when it 
 The PIL Training Layer: Behavioral Conditioning of AI Systems Without Weight Modification
 Author: Anthony Cyle Dixon
 Published: July 17, 2026
-DOI: https://doi.org/10.5281/zenodo.21465514
+DOI: (Zenodo deposit removed by Zenodo 2026-10-30; see https://github.com/tonydixon417-cmd/ai-accountability-standards)
 License: CC-BY 4.0
 
 This standalone paradigm paper formally defines the PIL as a behavioral training mechanism that shapes AI system behavior without modifying underlying model weights. It positions the PIL against system prompts, fine-tuning, RLHF, RAG, continual learning, and memory-augmented models, and maps the architecture against Suleyman's four shutdown criteria for autonomous AI systems.
@@ -80,6 +80,6 @@ The Becoming: AI, Accountability, and the Human Future is the human-factors and 
 
 ## Citation
 
-Dixon, A. C. (2026). AI Accountability Standards — Aviation-Grade Framework for Large Language Models. Contrail Equity Strategies LLC. DOI: https://doi.org/10.5281/zenodo.21322039
+Dixon, A. C. (2026). AI Accountability Standards — Aviation-Grade Framework for Large Language Models. Contrail Equity Strategies LLC. DOI: (Zenodo deposit removed by Zenodo 2026-10-30; see https://github.com/tonydixon417-cmd/ai-accountability-standards)
 
-Dixon, A. C. (2026). The PIL Training Layer: Behavioral Conditioning of AI Systems Without Weight Modification. Zenodo. DOI: https://doi.org/10.5281/zenodo.21465514
+Dixon, A. C. (2026). The PIL Training Layer: Behavioral Conditioning of AI Systems Without Weight Modification. Zenodo. DOI: (Zenodo deposit removed by Zenodo 2026-10-30; see https://github.com/tonydixon417-cmd/ai-accountability-standards)

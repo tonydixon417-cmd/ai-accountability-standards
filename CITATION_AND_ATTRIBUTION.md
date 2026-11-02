@@ -19,7 +19,7 @@ The repository's `CITATION.cff` file is the machine-readable citation source for
 
 ## Preferred citation for the PIL paradigm paper
 
-Dixon, Anthony Cyle. *The PIL Training Layer: Behavioral Conditioning of AI Systems Without Weight Modification*. Zenodo, 2026. DOI: <https://doi.org/10.5281/zenodo.21465514>.
+Dixon, Anthony Cyle. *The PIL Training Layer: Behavioral Conditioning of AI Systems Without Weight Modification*. Zenodo, 2026. DOI: <(Zenodo deposit removed by Zenodo 2026-10-30; see https://github.com/tonydixon417-cmd/ai-accountability-standards)>.
 
 Use this citation when referring specifically to the PIL paradigm or the claim that external behavioral conditioning can shape interaction behavior without modifying model weights.
 
@@ -68,8 +68,8 @@ The current repository test suite verifies three local behaviors: hash-chain tam
 
 - Canonical repository: <https://github.com/tonydixon417-cmd/ai-accountability-standards>
 - Repository concept DOI: <https://doi.org/10.5281/zenodo.20883473>
-- Verified Crop #1 release DOI (v2.5.1): <https://doi.org/10.5281/zenodo.21896643>
-- PIL paradigm DOI: <https://doi.org/10.5281/zenodo.21465514>
+- Verified Crop #1 release DOI (v2.5.1): <(Zenodo deposit removed by Zenodo 2026-10-30; see https://github.com/tonydixon417-cmd/ai-accountability-standards)>
+- PIL paradigm DOI: <(Zenodo deposit removed by Zenodo 2026-10-30; see https://github.com/tonydixon417-cmd/ai-accountability-standards)>
 - Tivrex AI Accountability Assessment: <https://tivrex-flight-check.base44.app>
 - *The Becoming* companion book: <https://www.amazon.com/dp/B0H9CX7CQ7>
 

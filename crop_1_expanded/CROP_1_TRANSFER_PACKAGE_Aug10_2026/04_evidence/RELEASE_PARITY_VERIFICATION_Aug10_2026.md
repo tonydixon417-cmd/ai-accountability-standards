@@ -1,3 +1,5 @@
+> **ZENODO-DOI-STATUS (added 2026-11-01):** the Zenodo account was banned by Zenodo on 30 October 2026 and all deposits were removed. Digital Object Identifiers cited below in this dated document no longer resolve (HTTP 410). They are retained as the historical record of what was published. Current canonical location: https://github.com/tonydixon417-cmd/ai-accountability-standards
+
 # Release Parity Verification
 ## GitHub / Zenodo v2.4.0 — August 10, 2026
 

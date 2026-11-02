@@ -298,7 +298,7 @@ Dixon, A. C. (2026). Ethics Floor Operator Specification v1.0. May 2026.
 *Anthony Cyle Dixon*
 *July 17, 2026 (Revised July 20, 2026 for independent Zenodo deposit)*
 
-*Related Zenodo DOI (stack-level): 10.5281/zenodo.21417008*
+*Related Zenodo DOI (stack-level): (Zenodo deposit removed by Zenodo 2026-10-30; see https://github.com/tonydixon417-cmd/ai-accountability-standards)*
 *This document's DOI: [ASSIGNED ON DEPOSIT]*
 
 ---
