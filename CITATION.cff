@@ -5,7 +5,6 @@ version: "2.5.3"
 date-released: "2026-10-28"
 url: "https://github.com/tonydixon417-cmd/ai-accountability-standards"
 repository-code: "https://github.com/tonydixon417-cmd/ai-accountability-standards"
-license: CC-BY-4.0
 authors:
   - family-names: Dixon
     given-names: Anthony Cyle

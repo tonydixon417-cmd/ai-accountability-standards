@@ -20,7 +20,7 @@ No technical content was altered. No framework, standard, protocol, reference im
 
 ## Standing recommendation, not yet applied
 
-The record is licensed CC-BY-4.0. Creative Commons advises against using its licenses for software, because they grant no patent rights and do not distinguish source from object code. The conventional arrangement is a permissive software license (Apache-2.0 or MIT) for the reference implementation and CC-BY-4.0 for the prose documents. Applying that split is a rights decision for the author and has deliberately not been made here.
+The record was listed as CC-BY-4.0. That listing was withdrawn on 2 November 2026: no licence was ever authorised and no licence is granted. All rights reserved. Creative Commons advises against using its licenses for software, because they grant no patent rights and do not distinguish source from object code. The conventional arrangement is a permissive software license (Apache-2.0 or MIT) for the reference implementation and CC-BY-4.0 for the prose documents. Applying that split is a rights decision for the author and has deliberately not been made here.
 
 ## Additional corrections in this version
 

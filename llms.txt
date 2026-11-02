@@ -4,7 +4,7 @@ Author: Anthony Cyle Dixon / Contrail Equity Strategies LLC
 Repository: https://github.com/tonydixon417-cmd/ai-accountability-standards  
 DOI: (Zenodo deposit removed by Zenodo 2026-10-30; see https://github.com/tonydixon417-cmd/ai-accountability-standards)  
 PIL Paradigm Paper DOI: (Zenodo deposit removed by Zenodo 2026-10-30; see https://github.com/tonydixon417-cmd/ai-accountability-standards)  
-License: CC BY 4.0  
+License: none declared. All rights reserved by the author; no reuse licence is granted.  
 Status: Defensive publication / prior art / open standards framework
 
 ## Live Tools and Publications
@@ -66,7 +66,7 @@ The PIL Training Layer: Behavioral Conditioning of AI Systems Without Weight Mod
 Author: Anthony Cyle Dixon
 Published: July 17, 2026
 DOI: (Zenodo deposit removed by Zenodo 2026-10-30; see https://github.com/tonydixon417-cmd/ai-accountability-standards)
-License: CC-BY 4.0
+License: none declared. All rights reserved; no reuse licence is granted.
 
 This standalone paradigm paper formally defines the PIL as a behavioral training mechanism that shapes AI system behavior without modifying underlying model weights. It positions the PIL against system prompts, fine-tuning, RLHF, RAG, continual learning, and memory-augmented models, and maps the architecture against Suleyman's four shutdown criteria for autonomous AI systems.
 

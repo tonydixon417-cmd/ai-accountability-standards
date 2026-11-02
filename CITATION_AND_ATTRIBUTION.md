@@ -7,7 +7,7 @@
 **Public name:** Tony Dixon
 **Organization:** Contrail Equity Strategies LLC
 **Repository:** <https://github.com/tonydixon417-cmd/ai-accountability-standards>
-**License listed in `CITATION.cff`:** CC-BY-4.0
+**License:** none declared. All rights reserved; no reuse licence is granted.
 
 Use **Anthony Cyle Dixon** for formal citation, authorship, and legal or archival records. Use **Tony Dixon** for public-facing biography and ordinary communications.
 
@@ -99,6 +99,6 @@ These are editorial/version-control reconciliation items, not grounds for invent
 - Repository DOI recorded: yes.
 - PIL paradigm DOI recorded: yes.
 - Author and organization identified: yes.
-- Reuse license recorded in `CITATION.cff`: CC-BY-4.0.
+- Reuse license: none. All rights reserved; no reuse licence is granted.
 - Independent validation citation: not available yet.
 - Production deployment citation: not available yet.
